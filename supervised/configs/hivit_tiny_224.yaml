@@ -1,0 +1,16 @@
+MODEL:
+  TYPE: hivit
+  NAME: hivit_tiny_224
+  DROP_PATH_RATE: 0.05
+  VIT:
+    PATCH_SIZE: 16
+    INNER_PATCHES: 4
+    EMBED_DIM: 384
+    DEPTHS: [1, 1, 10]
+    NUM_HEADS: 6
+    STEM_RATIO: 3.
+    MLP_RATIO: 4.
+    APE: True
+    RPE: True
+TRAIN:
+  CLIP_GRAD: None
